@@ -21,6 +21,7 @@ class CustomerRegistrationForm(UserCreationForm):
 
 class FitnessRegistrationForm(UserCreationForm):
     email = forms.CharField(required=True)
+    fitnesscenter_name = forms.CharField(required=True)
     contact_number = forms.CharField(required=True)
     class Meta(UserCreationForm.Meta):
         model = User  
